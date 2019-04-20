@@ -3,7 +3,8 @@
     <ion-buttons >
       <ion-grid>
         <ion-row text-center>
-        <ion-col size="4">
+    
+    <ion-col size="4">
       <ion-button >
       <ion-icon name="contact"></ion-icon>
       </ion-button>
@@ -31,7 +32,7 @@
   
   <ion-row>
     <ion-col size="4">
-      <img width="97px" height="151px" src="https://vignette.wikia.nocookie.net/uncharted/images/c/c3/NathanDrake-U4.png/revision/latest?cb=20180521172750">
+      <img width="130px" height="180px" src="https://vignette.wikia.nocookie.net/uncharted/images/c/c3/NathanDrake-U4.png/revision/latest?cb=20180521172750">
     </ion-col>
     <ion-col size="8">
         <ion-label>
@@ -70,7 +71,7 @@
 
 
   <ion-list >
-      <ion-radio-group>
+      <ion-radio-group (ionChange)="UpdateInterest($event)">
           <ion-item lines="full" width="100%">
           <h4>Show me</h4>
           </ion-item>
@@ -103,7 +104,7 @@
          </span>
          &nbsp;&nbsp;
          <span><b>Men</b></span>
-       <ion-radio slot="start" value="Men"></ion-radio>
+       <ion-radio slot="start" value="Men" ></ion-radio>
      </ion-item>
 
       </ion-radio-group>
@@ -112,12 +113,14 @@
 
       <ion-item lines="full"><h3>Age</h3></ion-item>
       <ion-item>
-        <ion-range dualKnobs="true" min="21" max="72"></ion-range>
+        <ion-label>{{agelow}}-{{agehigh}}</ion-label>
+        <ion-range dualKnobs="true" min="21" max="72" (ionChange)="UpdateAge($event)"></ion-range>
       </ion-item>
 
       <ion-item lines="full"><h3>Maximum Distance</h3></ion-item>
       <ion-item>
-        <ion-range min="1000" max="2000" color="secondary"></ion-range>
+        <ion-label>{{maxdist}}</ion-label>
+        <ion-range min="0" max="100" color="secondary" (ionChange)="UpdateDistance($event)"></ion-range>
       </ion-item>
 
       <br/>
