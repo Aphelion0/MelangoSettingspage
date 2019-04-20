@@ -1,0 +1,15 @@
+.margined{
+    margin: 20px;
+}
+
+.custom_chip{
+    min-width: 50px;
+    max-width: 100px;
+    font-size: 12px
+}
+
+@media screen and (max-width: 356px){
+    .custom_chip{
+        font-size: 9px
+    }
+} 

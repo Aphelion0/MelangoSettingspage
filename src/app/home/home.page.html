@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons >
+      <ion-grid>
+        <ion-row text-center>
+        <ion-col size="4">
+      <ion-button >
+      <ion-icon name="contact"></ion-icon>
+      </ion-button>
+    </ion-col>
+
+      <ion-col size="4">
+          <ion-button>
+          <ion-icon name="contact"></ion-icon>
+          </ion-button>
+          </ion-col>
+
+          <ion-col size="4">
+              <ion-button >
+              <ion-icon name="mail"></ion-icon>
+              </ion-button>
+              </ion-col>
+
+      </ion-row>
+      </ion-grid>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-row>
+    <ion-col size="4">
+      <img width="97px" height="151px" src="https://vignette.wikia.nocookie.net/uncharted/images/c/c3/NathanDrake-U4.png/revision/latest?cb=20180521172750">
+    </ion-col>
+    <ion-col size="8">
+        <ion-label>
+        <h1>Nathan Drake,31</h1>
+        <br/>
+        Adventurer,Libertalia
+      </ion-label>
+      <br/>
+      
+      <ion-chip class="custom_chip">
+        <ion-label>Entrepreneur</ion-label>
+      </ion-chip>
+      <ion-chip class="custom_chip">
+        <ion-label><ion-icon name="wine"></ion-icon>Occational</ion-label>
+      </ion-chip>
+        <br/>
+      <ion-chip class="custom_chip">
+        <ion-label><ion-icon name="wine" slot="start"></ion-icon>Occational</ion-label>
+      </ion-chip>
+      <ion-chip class="custom_chip">
+         <ion-label><ion-icon name="heart"></ion-icon>Music</ion-label>
+      </ion-chip>
+      <div >
+        <ion-button color="medium"> <span><ion-icon name="create"></ion-icon></span> &nbsp;&nbsp;EDIT</ion-button>
+      </div>
+
+    </ion-col>
+  </ion-row>
+
+
+
+
+  <ion-item>
+  <ion-icon name="settings"></ion-icon>&nbsp;<h2>&nbsp;Settings</h2>
+  </ion-item>
+
+
+  <ion-list >
+      <ion-radio-group>
+          <ion-item lines="full" width="100%">
+          <h4>Show me</h4>
+          </ion-item>
+    
+        <ion-item lines="none" slots="start" class="margined">
+             <span>     <ion-avatar>
+              <img src="data:image/jpeg;base64,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">
+            </ion-avatar>
+            </span>
+            &nbsp;&nbsp;
+            <span><b>Both</b></span>
+          <ion-radio slot="start" value="Both" checked></ion-radio>
+        </ion-item>
+
+        <ion-item lines="none" slots="start" class="margined">
+            <span>     <ion-avatar>
+             <img src="https://images.vexels.com/media/users/3/141471/isolated/preview/19996da19745603f166af824646f1f22-woman-profile-avatar-2-by-vexels.png">
+           </ion-avatar>
+           </span>
+           &nbsp;&nbsp;
+           <span><b>Women</b></span>
+         <ion-radio slot="start" value="Women"></ion-radio>
+       </ion-item>
+
+       <ion-item lines="none" slots="start" class="margined">
+          <span>  
+          <ion-avatar>
+           <img src="https://banner2.kisspng.com/20180219/gge/kisspng-avatar-icon-fashion-men-vector-avatar-5a8b58500790c7.677195441519081552031.jpg">
+         </ion-avatar>
+         </span>
+         &nbsp;&nbsp;
+         <span><b>Men</b></span>
+       <ion-radio slot="start" value="Men"></ion-radio>
+     </ion-item>
+
+      </ion-radio-group>
+    </ion-list>
+
+
+      <ion-item lines="full"><h3>Age</h3></ion-item>
+      <ion-item>
+        <ion-range dualKnobs="true" min="21" max="72"></ion-range>
+      </ion-item>
+
+      <ion-item lines="full"><h3>Maximum Distance</h3></ion-item>
+      <ion-item>
+        <ion-range min="1000" max="2000" color="secondary"></ion-range>
+      </ion-item>
+
+      <br/>
+      <div class="text-center"> 
+    <ion-button class="button-block"><span><ion-icon name="share"></ion-icon>&nbsp;</span>&nbsp;Share the app</ion-button>
+        </div>
+    <br/>
+
+    <div class="text-center">
+    <ion-button class="button-block" color="warning"><span><ion-icon name="power"></ion-icon>&nbsp;</span>&nbsp; Log Out</ion-button>
+      </div>
+
+
+    <br/>
+
+    <div class="text-center">
+    <ion-button class="button-block" color="danger"><span><ion-icon name="account"></ion-icon>&nbsp;</span>&nbsp;Delete Account</ion-button>
+      </div>
+
+    <br/>
+
+
+
+</ion-content>
